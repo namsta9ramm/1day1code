@@ -1,4 +1,3 @@
-from cgitb import reset
 import sys
 a=int(input())
 score=list[a]
