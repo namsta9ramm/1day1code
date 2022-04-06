@@ -14,7 +14,6 @@ for i in range(a):
         
         
         ans.append(list_b.index(p))
-    print(ans) 
     #ans=[0,1,2,2,4] k=0,1,2,3
     for k in range(len(ans)-1):
         if ans[k]<=ans[k+1]:
