@@ -18,4 +18,5 @@ for _ in range(test_case):
     ans_list.append(array1[k][n-1])    
 for j in ans_list:
     print(j)
-    
+
+# 너무 복잡하게 푼것같다. .  ㅜㅜ

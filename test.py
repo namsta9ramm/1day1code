@@ -1,4 +1,2 @@
-
-a=[1,2]
-a.reverse()
-print(a)
+arr=[0 for i in range(50000)]
+print(arr)
