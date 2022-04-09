@@ -16,7 +16,7 @@ for i in list_1:
         for j in range(1,i+1):
             if i%j==0:
                 use_num=use_num+1
-    print(use_num)
+    
     if use_num==2:
         ans=ans+1
 print(ans)
