@@ -1,2 +1,1 @@
-arr=[0 for i in range(50000)]
-print(arr)
+print((11**0.5))
