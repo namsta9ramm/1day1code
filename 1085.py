@@ -1,10 +1,26 @@
 import sys
 
-a,b,c,d=map(int,sys.stdin.readline().split())
+a,b=map(int,sys.stdin.readline().split())
+c,d=map(int,sys.stdin.readline().split())
+e,f=map(int,sys.stdin.readline().split())
 
-num_1=a
-num_2=b
-num_3=d-b
-num_4=c-a
-ans_list=[num_1,num_2,num_3,num_4]
-print(min(ans_list))
+if a==c and b==d:
+    print(e,f)
+
+elif a==c and b==f:
+    print(e,d)
+elif a==e and b==d:
+    print(c,f)
+elif a==e and b==f:
+    print(c,d)
+elif c==e and b==d:
+    print(a,f)
+elif c==e and b==f:
+    print(a,d)
+elif a==c and d==f:
+    print(e,b)
+elif a==e and d==f:
+    print(c,b)
+elif c==e and d==f:
+    print(a,b)
+
