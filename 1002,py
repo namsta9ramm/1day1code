@@ -4,17 +4,8 @@ testcase_T=int(input())
 for _ in range(testcase_T):
     a,b,r1,c,d,r2=map(int,sys.stdin.readline().split())
     half=((c-a)**2+(d-b)**2)**(0.5)
-    if r1<=r2:
-        if r2-r1<half<r2+r1:
-            print(2)    
-        elif r1+r2==half:
-            print(1)
-        elif r2-r1==half:
-            print(1)
-        elif r1+r2<half:
-            print(0)
-        elif half<r2-r1:
-            print(0)
+    if a==c and b==d and r1==r2:
+        print(-1)
     elif r1>r2:
         
         if r1-r2<half<r2+r1:
@@ -27,5 +18,15 @@ for _ in range(testcase_T):
             print(0)
         elif half<r1-r2:
             print(0)
-    elif a==c and b==d and r1==r2:
-        print(-1)
+    
+    elif r1<=r2:
+        if r2-r1<half<r2+r1:
+            print(2)    
+        elif r1+r2==half:
+            print(1)
+        elif r2-r1==half:
+            print(1)
+        elif r1+r2<half:
+            print(0)
+        elif half<r2-r1:
+            print(0)
