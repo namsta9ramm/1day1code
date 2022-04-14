@@ -15,4 +15,4 @@ def draw_stars(n):
   return L
 
 N=int(input())
-print('\n'.join(draw_stars(N)))
+print(("\n".join(draw_stars(N))))
