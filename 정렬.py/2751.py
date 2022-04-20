@@ -1,5 +1,10 @@
-array = [8,4,6,2,9,1,3,7,5]
-
+a=int(input())
+array_ans=[]
+for _ in range(a):
+    k=int(input())
+    array_ans.append(k)
+# 분할정복과 재귀를 이용한 알고리즘
+# len array= 9 
 def merge_sort(array):
 	if len(array) < 2:
 		return array
@@ -18,8 +23,6 @@ def merge_sort(array):
 			h += 1
 	merged_arr += low_arr[l:]
 	merged_arr += high_arr[h:]
-	print(merged_arr)
+	
 	return merged_arr
-
-
-array = merge_sort(array)
+array = print(merge_sort(array_ans))
