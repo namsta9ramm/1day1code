@@ -11,7 +11,7 @@ def merge_sort(array):
 	mid = len(array) // 2
 	low_arr = merge_sort(array[:mid])
 	high_arr = merge_sort(array[mid:])
-
+    #[8][4][6][2][9][1][3][5]
 	merged_arr = []
 	l = h = 0
 	while l < len(low_arr) and h < len(high_arr):
@@ -25,4 +25,4 @@ def merge_sort(array):
 	merged_arr += high_arr[h:]
 	
 	return merged_arr
-array = print(merge_sort(array_ans))
+array = print(merge_sort(array_ans))#COVID 19 #내일은 진짜함
