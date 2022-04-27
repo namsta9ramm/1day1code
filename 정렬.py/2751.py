@@ -25,4 +25,4 @@ def merge_sort(array):
 	merged_arr += high_arr[h:]
 	
 	return merged_arr
-array = print(merge_sort(array_ans))#COVID 19 #내일은 진짜함
+array = print(merge_sort(array_ans))
