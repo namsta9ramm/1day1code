@@ -3,7 +3,7 @@ n=int(input())
 check_list=[0]*10001
 
 for i in range(n):
-    input_num=map(int,sys.stdin.readline())
+    input_num=int(sys.stdin.readline())
 
     check_list[input_num-1]=check_list[input_num-1]+1
 
