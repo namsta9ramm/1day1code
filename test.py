@@ -1,14 +1,15 @@
-# array = [8,4,6,2,9,1,3,7,5]
-array = [9,8,7,6,5,4,3,2,1]
+import sys
+from collections import Counter
+n=int(input())
+list_num=[]
+for _ in range(n):
+    list_num.append(int(sys.stdin.readline()))
 
-def bubble_sort(array):
-    n = len(array)
-    for i in range(n - 1):
-        for j in range(n - i - 1):
-            if array[j] > array[j + 1]:
-                array[j], array[j + 1] = array[j + 1], array[j]
-        print(array)
+#최빈값
 
-print("before: ",array)
-bubble_sort(array)
-print("after:", array)
+cnt=Counter(list_num).most_common()
+print(cnt)
+if len(cnt)>1 and cnt[0][1]==cnt[1][1]:
+  print(cnt[1][0])
+else :
+  print(cnt[0][0])
