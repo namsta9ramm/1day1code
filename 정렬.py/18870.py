@@ -1,3 +1,14 @@
-#좌표압축
-a=int(input())
-ans_list=[]
+import sys
+
+input = sys.stdin.readline
+
+n = int(input())
+arr = list(map(int, input().split()))
+
+arr2 = sorted(list(set(arr)))
+dic = {arr2[i] : i for i in range(len(arr2))}
+
+print(dic)
+
+
+    
