@@ -9,7 +9,6 @@ for j in range(a):
 for k in range(b):
     list_2.append(input())
 
-print(dict_1)
 for i in list_2:
     if i.isdigit()==True:
         i1=int(i)
