@@ -1,3 +1,4 @@
+#유클리드 호재법
 a,b=map(int,input().split())
 
 def gcd(a,b):
