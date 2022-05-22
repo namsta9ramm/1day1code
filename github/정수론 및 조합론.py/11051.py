@@ -2,5 +2,5 @@
 import math
 
 a,b=map(int,input().split())
-print(math.factorial(a))
-print(math.factorial(a)//(math.factorial(a-b)*math.factorial(b)))
+m=math.factorial(a)//(math.factorial(a-b)*math.factorial(b))
+print(m%10007)
