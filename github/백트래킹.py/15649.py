@@ -8,7 +8,9 @@ def dfs():
         visited[i] = True
         s.append(i)
         dfs()
-        s.pop()        
+        s.pop()
+        print(s)
+        print(visited)
         visited[i] = False
             
 
