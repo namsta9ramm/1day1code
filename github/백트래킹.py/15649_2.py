@@ -1,5 +1,5 @@
 # 15649
-n,m = list(map(int,input().split())) # n=4,m=2
+n,m = list(map(int,input().split())) # n=3,m=2
 s = []
 def dfs():
     if len(s)==m:

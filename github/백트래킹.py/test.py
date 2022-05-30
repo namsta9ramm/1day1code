@@ -1,15 +1,14 @@
-# 15650
-n,m = list(map(int,input().split())) # n=3,m=2
-s = []
-def dfs(start):
+n,m=map(int,input().split())
+s=[]
+
+def backtracking(start):
     if len(s)==m:
         print(' '.join(map(str,s)))
         return
-    
     for i in range(start,n+1):
         if i not in s:
             s.append(i)
-            dfs(i+1)
-            s.pop()
+            backtracking(i+1)
+            s.pop()    
 
-dfs(1)
+backtracking(1)
