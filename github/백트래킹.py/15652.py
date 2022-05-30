@@ -1,15 +1,15 @@
-# 15649
+# 15652
 n,m = list(map(int,input().split())) # n=3,m=2
 s = []
-def dfs():
+def dfs(start):
     if len(s)==m:
         print(' '.join(map(str,s)))
         return
     
-    for i in range(1,n+1):
+    for i in range(start,n+1):
         
             s.append(i)
-            dfs()
+            dfs(i)
             s.pop()
 
-dfs()
+dfs(1)
