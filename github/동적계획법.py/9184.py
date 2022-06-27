@@ -12,7 +12,8 @@ def w(a,b,c):
     
     dp[a][b][c]= w(a-1, b, c) + w(a-1, b-1, c) + w(a-1, b, c-1) - w(a-1, b-1, c-1)
     return dp[a][b][c]
-dp=[[[0]*21 for _ in range(21)] for _ in range(21)]
+dp=[[[0]*21 for _ in range(21)] for _ in range(21)] #동적계획법의 핵심
+
 
 a,b,c=map(int,input().split())
 while (a!=-1 or b!=-1 or c!=-1):
