@@ -1,16 +1,13 @@
-a,b=map(int,input().split())
-as_list=[]
-for i in range(a):
-    as_list.append(int(input()))
-ans_list=[]
-sum=0
-while True:
-    for j in as_list:
-        if b//j!=0:
-            ans_list.append(b//j)
-    if len(ans_list)==0:
+n, k = map(int, input().split())
+m = []
+num = 0
+for i in range(n):
+    m.append(int(input()))
+for i in range(n - 1, -1, -1):
+    if k == 0:
         break
-    as_list=ans_list
-    sum=sum+min(ans_list)
-
-print(sum)
+    if m[i] > k:
+        continue
+    num =num+ k // m[i]
+    k =k%m[i]
+print(num)
