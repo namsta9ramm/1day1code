@@ -10,7 +10,7 @@ for i in a1:
         new_array.append(sum)
     else:
         new_array.append(int(i))
-    print(new_array)
+    
 a1=new_array[0]
 
 for j in range(1,len(new_array)):
