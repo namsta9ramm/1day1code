@@ -1,3 +1,2 @@
-import sys
-case=sys.stdin.readline().split()
-print(case)
+list_1=[0]*5
+print(len(list_1))
