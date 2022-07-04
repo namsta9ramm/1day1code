@@ -9,9 +9,9 @@ ay=y1-y2
 bx=x3-x2
 by=y3-y2
 if ax*by-ay*bx>0:
-    print(1)
-elif ax*by-ay*bx<0:
     print(-1)
+elif ax*by-ay*bx<0:
+    print(1)
 else:
     print(0)
 
