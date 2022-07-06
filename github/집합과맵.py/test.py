@@ -1,6 +1,5 @@
 from collections import deque
 
-a=deque([1,2,3])
-a.append(2)
-print(a.popleft())
-print(a)
+
+a=deque[(2,3,4,5)]
+print(a[1:2])
