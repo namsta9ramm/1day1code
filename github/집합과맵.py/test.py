@@ -1,5 +1,1 @@
-from collections import deque
-
-
-a=deque[(2,3,4,5)]
-print(a[1:2])
+print(list(range(10)))
