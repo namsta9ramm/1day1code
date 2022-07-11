@@ -3,7 +3,8 @@ total, tar = map(int,sys.stdin.readline().split())
 
 tem = list(map(int,sys.stdin.readline().split()))
 #tem=[1,2,3,1,2]
-# list1=[5,2,2]
+# 부분합 0 1 2
+# list1=[1,0,0]
 list1= [0 for i in range(tar)]
 presum = 0
 
@@ -17,6 +18,7 @@ for i in range(total):
     print(list1)
 ans=0
 for i in list1:
+
     ans += i*(i-1)//2
 
 print(ans)
