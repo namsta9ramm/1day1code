@@ -1,7 +1,6 @@
 #정수삼각형
 import re
 
-
 a=int(input())
 list1=[]
 for i in range(a):
