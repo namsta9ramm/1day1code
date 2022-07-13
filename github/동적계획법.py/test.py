@@ -1,19 +1,13 @@
-num = int(input())
-group_word = 0
-error = 0
-# num= 5
-# word= aa , ab , ba , bb , abc
-for i in range(num):
-    word = input() #bb
-    for i in range(len(word)-1): #1
-        
-        if word[i] != word[i+1]:
-            if word[i+1:].count(word[i])>0:
-                error += 1
-    
-    
-    if error == 0:
-        group_word += 1
-
-    print(group_word)
-print(group_word)
+n = int(input())
+w = [0]
+for i in range(n):
+    w.append(int(input()))
+#w=[0,6,10,13,7,5,1,30]
+dp = [0]
+#dp=[0,6,16]
+dp.append(w[1])
+if n > 1:
+    dp.append(w[1] + w[2])
+for i in range(3, n + 1):
+    dp.append(max(dp[i - 1], dp[i - 3] + w[i - 1] + w[i], dp[i - 2] + w[i]))
+print(dp[n])
