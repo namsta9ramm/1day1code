@@ -1,6 +1,21 @@
 #가장 긴 바이토닉 부분 수열
-a=int(input())
-
-list1=list(map(int,input().split()))
-
-print(list1.index(max(list1)))
+n = int(input())
+a = list(map(int, input().split()))
+dpp = [0 for i in range(n)]
+dpm = [0 for i in range(n)]
+dpb = [0 for i in range(n)]
+for i in range(n):
+    for j in range(i):
+        if a[i] > a[j] and dpp[i] < dpp[j]:
+            dpp[i] = dpp[j]
+    dpp[i] += 1
+for i in range(n - 1, -1, -1):
+    for j in range(n - 1, i, -1):
+        if a[i] > a[j] and dpm[i] < dpm[j]:
+            dpm[i] = dpm[j]
+    dpm[i] += 1
+for i in range(n):
+    dpb[i] = dpp[i] + dpm[i] - 1
+print(dpp)
+print(dpm)
+print(max(dpb))
