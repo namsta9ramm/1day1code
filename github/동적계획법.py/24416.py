@@ -10,7 +10,6 @@ def fib(n):
         sum1=sum1+1
         return fib(n-1)+fib(n-2)
 
-
 d = [0] * 40
 
 def fibo(x):
