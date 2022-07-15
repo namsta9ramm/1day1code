@@ -16,6 +16,5 @@ for i in range(n - 1, -1, -1):
     dpm[i] += 1
 for i in range(n):
     dpb[i] = dpp[i] + dpm[i] - 1
-print(dpp)
-print(dpm)
+
 print(max(dpb))
