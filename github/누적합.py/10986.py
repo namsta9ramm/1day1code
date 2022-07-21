@@ -1,16 +1,12 @@
 import sys
 total, tar = map(int,sys.stdin.readline().split())
-
 tem = list(map(int,sys.stdin.readline().split()))
 #tem=[1,2,3,1,2]
 # 부분합 0 1 2
-# list1=[1,0,0]
+# list1=[2,2,2]
 list1= [0 for i in range(tar)]
 presum = 0
-
 list1[0] = 1
-
-
 for i in range(total):
     presum=presum+tem[i]
 
