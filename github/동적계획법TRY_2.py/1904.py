@@ -7,5 +7,5 @@ dp[2]=2
 a=int(input())
 
 for i in range(3,a+1):
-    dp[i]=dp[i-1]+dp[i-2]
+    dp[i]=(dp[i-1]+dp[i-2])%15746
 print(dp[a])
