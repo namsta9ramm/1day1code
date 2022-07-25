@@ -1,21 +1,24 @@
+#알고리즘수업- 피보나치1
+n=int(input())
+sum1=1
+sum2=0
 def fib(n):
-    
-    if n==1 or n==2:
+    if (n==1 or n==2):
         return 1
     else:
+        global sum1
+        sum1=sum1+1
         return fib(n-1)+fib(n-2)
-    
 
-def fibonachi(n):
-    
-    f=[0]*(n+1)
-    f[1]=1
-    f[2]=1
-    for i in range(3,n+1):
-        f[n]=f[n-1]+f[n-2]
-    
-    return f[n]
-    
 
-a=int(input())
-print(fib(a),fibonachi(a))
+d = [0] * 40
+def fibo(x):
+    if x == 1 or x == 2:
+        return 1
+    if d[x] != 0:
+        return d[x]
+    
+    d[x] = fibo(x-1) + fibo(x-2)
+    return d[x]
+fib(n)
+print(sum1,n-2)
