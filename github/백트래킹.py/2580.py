@@ -46,9 +46,6 @@ def dfs(a):
         #두번쨰 blank=[1,4] x=1 y=4
         if checkRow(x, i) and checkCol(y, i) and checkRect(x, y, i):
             graph[x][y] = i
-            print(a)
-            print("-----------------")
-            print(graph)
             dfs(a+1)
             graph[x][y] = 0
             
