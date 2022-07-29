@@ -16,7 +16,7 @@ def solution(x,y,n):
                 solution(x+n//2,y,n//2)
                 solution(x,y+n//2,n//2)
                 solution(x+n//2,y+n//2,n//2)
-                return
+                
     if color==0:
         white=white+1
     else:
