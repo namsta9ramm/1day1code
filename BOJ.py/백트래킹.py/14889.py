@@ -10,7 +10,7 @@ def dfs(depth, idx):
                 elif not visited[i] and not visited[j]:
                     power2 += graph[i][j]
         min_diff = min(min_diff, abs(power1-power2))
-        print(min_diff)
+        
         return
 #idx=0 n=8 i=0
 #visited=[T,F,F,F,F,F,F,F]
@@ -21,7 +21,6 @@ def dfs(depth, idx):
             dfs(depth+1, i+1)
             visited[i] = False
 n = int(input())
-
 visited = [False for _ in range(n)]
 graph = [list(map(int, input().split())) for _ in range(n)]
 min_diff = int(1e9)

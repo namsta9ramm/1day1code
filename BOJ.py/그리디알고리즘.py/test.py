@@ -1,8 +1,12 @@
-a=int(input())
-list_distance=list(map(int,input().split()))
-list_price=list(map(int,input().split()))
+n = int(input())
+room = []
 
-sum=list_distance[0]*list_price[0]
-a=list_price.index(min(list_price))
-ans=min(list_price)*sum(list_distance[a::])    
-print(ans)
+for i in range(n):
+    a, b = map(int, input().split())
+    room.append([a, b])
+
+
+room.sort(key = lambda x: x[1])
+
+for j in room:
+    print(j)
