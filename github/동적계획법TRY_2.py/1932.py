@@ -12,6 +12,6 @@ for i in range(1,a):
             list1[i][j]=list1[i][j]+list1[i-1][-1]
         else:
             list1[i][j]=list1[i][j]+max(list1[i-1][j-1],list1[i-1][j])
-print(list1[-1])
+
 print(max(list1[-1]))
 
