@@ -9,6 +9,6 @@ score[2]=stair[2]+max(stair[0],stair[1])
 
 
 for i in range(3,num+1):
-    score[i]=max(stair[i]+stair[i-1]+score[i-3],stair[i]+score[i-2])
+    score[i]=stair[i]+max(stair[i-1]+score[i-3],score[i-2])
 
 print(score[num-1])
